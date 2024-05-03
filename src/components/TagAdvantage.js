@@ -140,9 +140,7 @@ const useStyles = createUseStyles((theme) => ({
   }
 }));
 
-const text = "- 5%";
-// const text = '- 5%';
-const TagAdvantage = () => {
+const TagAdvantage = ({ tag }) => {
   const classes = useStyles();
 
   return (
@@ -168,7 +166,7 @@ const TagAdvantage = () => {
             />
           </div>
           <div className={classes.textcontainer}>
-            <span className={classes.text}>-5%</span>
+            <span className={classes.text}>{tag}</span>
           </div>
           <div className={classes.group2}>
             <img

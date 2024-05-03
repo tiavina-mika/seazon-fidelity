@@ -95,7 +95,7 @@ const Reward = () => {
           type="video/mp4"
         />
       </video>
-      <TagAdvantage />
+      <TagAdvantage tag="Carte cadeau Biocoop" />
       <div className={classes.content}>
         L'avantage sera appliqué automatiquement sur votre commande du
         25/10/2030.
