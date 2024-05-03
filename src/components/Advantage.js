@@ -18,62 +18,99 @@ const useStyles = createUseStyles((theme) => ({
     lineHeight: 1
   },
   content: {
-    position: "relative"
+    position: "relative",
+    background: "red",
+    padding: "16px 30px"
   },
-  icon00: {
+  icons: {
     position: "absolute"
+  },
+  semiCircleRightIcon: {
+    composes: "$icons",
+    left: 0,
+    top: 0
+  },
+  icon02: {
+    composes: "$icons",
+    left: 20
+  },
+  icon03: {
+    composes: "$icons",
+    right: 20
+  },
+  icon04: {
+    composes: "$icons",
+    right: 5,
+    top: 40
+  },
+  circleIcon: {
+    composes: "$icons",
+    right: 5,
+    top: 40
   }
 }));
 
+const text = "- 5%";
+// const text = '- 5%';
 const Advantage = () => {
   const classes = useStyles();
 
   return (
     <div>
       <div className={classes.content}>
-        <img alt="" src="/images/fidelity-01.svg" className={classes.icon00} />
         <img
+          alt=""
+          src="/images/fidelity-semi-circle-right.svg"
+          className={classes.semiCircleRightIcon}
+        />
+        <img
+          alt=""
+          src="/images/fidelity-point-01.svg"
+          className={classes.icon02}
+        />
+        <img
+          alt=""
+          src="/images/fidelity-point-01.svg"
+          className={classes.icon03}
+        />
+        <img
+          alt=""
+          src="/images/fidelity-point-01.svg"
+          className={classes.icon04}
+        />
+        <img
+          alt=""
+          src="/images/fidelity-circle.svg"
+          className={classes.circleIcon}
+        />
+        {/* <img
           alt=""
           src="/images/fidelity-line.svg"
-          className={classes.icon01}
+          className={classes.icon0xxx}
         />
         <img
           alt=""
           src="/images/fidelity-point-01.svg"
-          className={classes.icon01}
-        />
-        <img
-          alt=""
-          src="/images/fidelity-point-01.svg"
-          className={classes.icon01}
-        />
-        <img
-          alt=""
-          src="/images/fidelity-point-01.svg"
-          className={classes.icon01}
+          className={classes.icon0xxx}
         />
         <img
           alt=""
           src="/images/fidelity-round.svg"
-          className={classes.icon01}
+          className={classes.icon0xxx}
         />
         <img
           alt=""
           src="/images/fidelity-semi-circle-left.svg"
-          className={classes.icon01}
+          className={classes.icon0xxx}
         />
-        <img
-          alt=""
-          src="/images/fidelity-semi-circle-right.svg"
-          className={classes.icon01}
-        />
+
         <img
           alt=""
           src="/images/fidelity-star.svg"
-          className={classes.icon01}
-        />
+          className={classes.icon0xxx}
+        /> */}
         <div className={classes.textContainer}>
-          <span className={classes.text}>- 5%</span>
+          <span className={classes.text}>{text}</span>
         </div>
       </div>
     </div>
