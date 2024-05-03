@@ -2,7 +2,7 @@ import React from "react";
 import { createUseStyles } from "react-jss";
 import { mobile } from "./Responsive";
 import SeazonButton from "./SeazonButton";
-import Advantage from "./Advantage";
+import Advantage3 from "./Advantage3";
 
 const useStyles = createUseStyles((theme) => ({
   modalRoot: {
@@ -95,7 +95,7 @@ const Reward = () => {
           type="video/mp4"
         />
       </video>
-      <Advantage />
+      <Advantage3 />
       <div>{/* <Advantage2 /> */}</div>
       <div className={classes.content}>
         L'avantage sera appliqué automatiquement sur votre commande du
