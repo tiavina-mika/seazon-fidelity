@@ -2,6 +2,9 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles((theme) => ({
   root: {
+    width: "100%"
+  },
+  content: {
     height: 99.75,
     position: "relative",
     minWidth: 167.08
@@ -31,7 +34,7 @@ const useStyles = createUseStyles((theme) => ({
     color: theme.color.green[710],
     fontFamily: 'Avenir LT Std-85Heavy", Helvetica',
     fontSize: 23.1,
-    fontWeight: 400,
+    fontWeight: 700,
     letterSpacing: 0,
     lineHeight: 1,
     position: "relative",
@@ -132,38 +135,40 @@ const TagAdvantage = ({ tag }) => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.frame}>
-        <div className={classes.leftGroup}>
-          <img
-            className={classes.ellipse}
-            alt="Ellipse"
-            src="/images/fidelity-semi-circle-right.svg"
-          />
-          <img
-            className={classes.star}
-            alt="Star"
-            src="/images/fidelity-star.svg"
-          />
-          <div className={classes.ellipse2} />
-          <img
-            className={classes.line}
-            alt="Line"
-            src="/images/fidelity-line.svg"
-          />
-        </div>
-        <div className={classes.textcontainer}>
-          <span className={classes.text}>{tag}</span>
-        </div>
-        <div className={classes.rightGroup}>
-          <img
-            className={classes.img}
-            alt="Ellipse"
-            src="/images/fidelity-semi-circle-left.svg"
-          />
-          <div className={classes.ellipse3} />
-          <div className={classes.ellipse4} />
-          <div className={classes.ellipse5} />
-          <div className={classes.ellipse6} />
+      <div className={classes.content}>
+        <div className={classes.frame}>
+          <div className={classes.leftGroup}>
+            <img
+              className={classes.ellipse}
+              alt="Ellipse"
+              src="/images/fidelity-semi-circle-right.svg"
+            />
+            <img
+              className={classes.star}
+              alt="Star"
+              src="/images/fidelity-star.svg"
+            />
+            <div className={classes.ellipse2} />
+            <img
+              className={classes.line}
+              alt="Line"
+              src="/images/fidelity-line.svg"
+            />
+          </div>
+          <div className={classes.textcontainer}>
+            <span className={classes.text}>{tag}</span>
+          </div>
+          <div className={classes.rightGroup}>
+            <img
+              className={classes.img}
+              alt="Ellipse"
+              src="/images/fidelity-semi-circle-left.svg"
+            />
+            <div className={classes.ellipse3} />
+            <div className={classes.ellipse4} />
+            <div className={classes.ellipse5} />
+            <div className={classes.ellipse6} />
+          </div>
         </div>
       </div>
     </div>
