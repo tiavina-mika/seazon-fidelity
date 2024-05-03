@@ -1,7 +1,7 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
-import { mobile } from "../../../Responsive";
-import SeazonButton from "../../../buttons/SeazonButton";
+import { mobile } from "./components/Responsive";
+import SeazonButton from "./components/SeazonButton";
 import Advantage from "./Advantage";
 
 const useStyles = createUseStyles((theme) => ({
