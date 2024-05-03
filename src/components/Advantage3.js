@@ -53,7 +53,7 @@ const useStyles = createUseStyles((theme) => ({
     width: 22
   },
   ellipse2: {
-    background: theme.color.green[560],
+    background: theme.color.green[710],
     borderRadius: 2.7,
     height: 5,
     left: 44,
@@ -76,14 +76,11 @@ const useStyles = createUseStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    // marginLeft: '-16px',
-    minWidth: 95.53,
-    padding: 19.76,
+    padding: "19.5px 27px",
     position: "relative"
-    // miHeight: 40
   },
 
-  textWrapper: {
+  text: {
     color: theme.color.green[710],
     fontFamily: 'Avenir LT Std-85Heavy", Helvetica',
     fontSize: 23.1,
@@ -111,14 +108,13 @@ const useStyles = createUseStyles((theme) => ({
   },
 
   ellipse3: {
-    border: "1.29px solid",
-    borderColor: theme.color.green[710],
-    borderRadius: 5.81,
-    height: 12,
+    border: "1.29px solid " + theme.color.green[710],
+    borderRadius: 8,
+    height: 8,
     left: 32,
     position: "absolute",
     top: 59,
-    width: 12
+    width: 8
   },
 
   ellipse4: {
@@ -165,30 +161,30 @@ const Advantage3 = () => {
             <img
               className={classes.ellipse}
               alt="Ellipse"
-              src="https://c.animaapp.com/zoMYYJZN/img/ellipse-801-1.svg"
+              src="/images/fidelity-semi-circle-right.svg"
             />
             <img
               className={classes.star}
               alt="Star"
-              src="https://c.animaapp.com/zoMYYJZN/img/star-1.svg"
+              src="/images/fidelity-star.svg"
             />
             <div className={classes.ellipse2} />
             <img
               className={classes.line}
               alt="Line"
-              src="https://c.animaapp.com/zoMYYJZN/img/line-23-1.svg"
+              src="/images/fidelity-line.svg"
             />
           </div>
           <div className={classes.textcontainer}>
-            <span className={classes.textWrapper}>-5%</span>
+            <span className={classes.text}>-5%</span>
           </div>
           <div className={classes.group2}>
             <img
               className={classes.img}
               alt="Ellipse"
-              src="https://c.animaapp.com/zoMYYJZN/img/ellipse-803-1.svg"
+              src="/images/fidelity-semi-circle-left.svg"
             />
-            <div cclassName={classes.ellipse3} />
+            <div className={classes.ellipse3} />
             <div className={classes.ellipse4} />
             <div className={classes.ellipse5} />
             <div className={classes.ellipse6} />
