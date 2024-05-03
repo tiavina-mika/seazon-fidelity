@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("../../fonts/3556BA_2_0.eot");
+  src: url("../../fonts/3556BA_2_0.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/3556BA_2_0.woff2") format("woff2"),
+    url("../../fonts/3556BA_2_0.woff") format("woff"),
+    url("../../fonts/3556BA_2_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RocGrotesk-Medium";
+  src: url("../../fonts/RocGrotesk-Medium.eot");
+  src: url("../../fonts/RocGrotesk-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/RocGrotesk-Medium.woff2") format("woff2"),
+    url("../../fonts/RocGrotesk-Medium.woff") format("woff"),
+    url("../../fonts/RocGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("../../fonts/3556BA_1_0.eot");
+  src: url("../../fonts/3556BA_1_0.eot?#iefix") format("embedded-opentype"),
+    url("font/3556BA_1_0.woff2") format("woff2"),
+    url("font/3556BA_1_0.woff") format("woff"),
+    url("font/3556BA_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brandon-Medium";
+  src: url("../../fonts/brandon_medium.otf");
+}
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../../fonts/377556_0_0.eot");
+  src: url("../../fonts/377556_0_0.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/377556_0_0.woff2") format("woff2"),
+    url("../../fonts/377556_0_0.woff") format("woff"),
+    url("../../fonts/377556_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("../../fonts/3556BA_0_0.eot");
+  src: url("../../fonts/3556BA_0_0.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/3556BA_0_0.woff2") format("woff2"),
+    url("../../fonts/3556BA_0_0.woff") format("woff"),
+    url("../../fonts/3556BA_0_0.ttf") format("truetype");
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  /* fallback for min-height: fill-availbale */
+  -webkit-overflow-scrolling: touch;
+  min-height: fill-available;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir-Roman", sans-serif;
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+  height: 100vh;
+}
+
+input,
+select,
+button {
+  font-family: "Avenir-Roman";
+}
+
+*:before,
+*:after {
+  /* not * to preserve inheritance */
+  font-family: "Avenir-Roman";
+}
+
+.font-Brandon-Medium {
+  font-family: "Brandon-Medium";
+}
+
+.font-Avenir-Black {
+  font-family: "Avenir-Black";
+}
+
+.font-Avenir-Light {
+  font-family: "Avenir-Light";
+}
+
+.font-Avenir-Medium {
+  font-family: "Avenir-Medium";
+}
+
+.font-Grotesk-Medium {
+  font-family: "RocGrotesk-Medium";
+}
