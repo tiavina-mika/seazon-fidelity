@@ -4,9 +4,10 @@ const useStyles = createUseStyles((theme) => ({
   root: {
     height: 99.75,
     position: "relative",
-    width: 167.08
+    minWidth: 167.08
   },
   frame: {
+    justifyContent: "center",
     alignItems: "center",
     display: "flex",
     left: 0,
@@ -15,13 +16,39 @@ const useStyles = createUseStyles((theme) => ({
     bottom: 0,
     right: 0
   },
-
-  group: {
+  textcontainer: {
+    alignItems: "center",
+    backgroundColor: theme.color.green[560],
+    borderRadius: 164.71,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    padding: "19.5px 27px",
+    position: "relative",
+    marginLeft: -16
+  },
+  text: {
+    color: theme.color.green[710],
+    fontFamily: 'Avenir LT Std-85Heavy", Helvetica',
+    fontSize: 23.1,
+    fontWeight: 400,
+    letterSpacing: 0,
+    lineHeight: 1,
+    position: "relative",
+    whiteSpace: "nowrap",
+    width: "fit-content"
+  },
+  leftGroup: {
     height: 93.85,
     position: "relative",
     width: 49.4
   },
-
+  rightGroup: {
+    height: 99.75,
+    marginLeft: -16,
+    position: "relative",
+    width: 54.15
+  },
   ellipse: {
     height: 17,
     left: 15,
@@ -52,36 +79,6 @@ const useStyles = createUseStyles((theme) => ({
     top: 84,
     width: 11
   },
-  textcontainer: {
-    alignItems: "center",
-    backgroundColor: theme.color.green[560],
-    borderRadius: 164.71,
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    padding: "19.5px 27px",
-    position: "relative"
-  },
-
-  text: {
-    color: theme.color.green[710],
-    fontFamily: 'Avenir LT Std-85Heavy", Helvetica',
-    fontSize: 23.1,
-    fontWeight: 400,
-    letterSpacing: 0,
-    lineHeight: 1,
-    position: "relative",
-    whiteSpace: "nowrap",
-    width: "fit-content"
-  },
-
-  group2: {
-    height: 99.75,
-    marginLeft: "-16px",
-    position: "relative",
-    width: 54.15
-  },
-
   img: {
     height: 10,
     left: 44,
@@ -89,7 +86,6 @@ const useStyles = createUseStyles((theme) => ({
     top: 90,
     width: 10
   },
-
   ellipse3: {
     border: "1.29px solid " + theme.color.green[710],
     borderRadius: 8,
@@ -137,7 +133,7 @@ const TagAdvantage = ({ tag }) => {
   return (
     <div className={classes.root}>
       <div className={classes.frame}>
-        <div className={classes.group}>
+        <div className={classes.leftGroup}>
           <img
             className={classes.ellipse}
             alt="Ellipse"
@@ -158,7 +154,7 @@ const TagAdvantage = ({ tag }) => {
         <div className={classes.textcontainer}>
           <span className={classes.text}>{tag}</span>
         </div>
-        <div className={classes.group2}>
+        <div className={classes.rightGroup}>
           <img
             className={classes.img}
             alt="Ellipse"

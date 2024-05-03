@@ -3,6 +3,7 @@ import { createUseStyles } from "react-jss";
 import { mobile } from "./Responsive";
 import SeazonButton from "./SeazonButton";
 import TagAdvantage from "./TagAdvantage";
+import classNames from "classnames";
 
 const useStyles = createUseStyles((theme) => ({
   modalRoot: {
@@ -51,6 +52,10 @@ const useStyles = createUseStyles((theme) => ({
     lineHeight: "22px",
     color: theme.color.black
   },
+  advantage: {
+    width: "100%"
+    // height: 200,
+  },
   button: {
     width: "125.64px",
     alignSelf: "center",
@@ -95,7 +100,10 @@ const Reward = () => {
           type="video/mp4"
         />
       </video>
-      <TagAdvantage tag="Carte cadeau Biocoop" />
+      <div className={classNames(classes.advantage)}>
+        <TagAdvantage tag="- 5%" />
+        {/* <TagAdvantage tag="Carte cadeau Biocoop" /> */}
+      </div>
       <div className={classes.content}>
         L'avantage sera appliqué automatiquement sur votre commande du
         25/10/2030.
