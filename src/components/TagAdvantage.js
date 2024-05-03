@@ -3,7 +3,6 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles((theme) => ({
   content: {
     alignItems: "flex-start",
-    // backgroundColor: '#fff',
     display: "flex",
     gap: 10,
     justifyContent: "center",
@@ -11,13 +10,6 @@ const useStyles = createUseStyles((theme) => ({
     width: 390
   },
   root: {
-    // borderRadius: 164.706,
-    // background: theme.color.green[560],
-    // // minWidth: 95.53,
-    // // padding: 19.765
-    // padding: "16px 24px",
-    // position: 'relative',
-
     height: 99.75,
     position: "relative",
     width: 167.08
@@ -150,7 +142,7 @@ const useStyles = createUseStyles((theme) => ({
 
 const text = "- 5%";
 // const text = '- 5%';
-const Advantage3 = () => {
+const TagAdvantage = () => {
   const classes = useStyles();
 
   return (
@@ -195,4 +187,4 @@ const Advantage3 = () => {
   );
 };
 
-export default Advantage3;
+export default TagAdvantage;
