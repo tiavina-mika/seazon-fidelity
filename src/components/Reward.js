@@ -2,7 +2,7 @@ import React from "react";
 import { createUseStyles } from "react-jss";
 import { mobile } from "./Responsive";
 import SeazonButton from "./SeazonButton";
-// // import Advantage from "./Advantage";
+import Advantage2 from "./Advantage2";
 
 const useStyles = createUseStyles((theme) => ({
   modalRoot: {
@@ -95,7 +95,8 @@ const Reward = () => {
           type="video/mp4"
         />
       </video>
-      <div>{/* <Advantage /> */}</div>
+      <Advantage2 />
+      <div>{/* <Advantage2 /> */}</div>
       <div className={classes.content}>
         L'avantage sera appliqué automatiquement sur votre commande du
         25/10/2030.
