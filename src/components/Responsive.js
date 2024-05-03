@@ -1,6 +1,5 @@
 import React from "react";
 import Responsive from "react-responsive";
-import { SERVICES, isFoodcheriService, isFridgeService } from "../utils";
 import * as medias from "./ResponsiveMedias";
 
 //---- Tags for JSX ----//
@@ -20,6 +19,7 @@ export const Terminal = (props) => (
 );
 
 //---- media queries for css-js ----//
+
 // export const miniMobile = '@media (max-width: 300px)';
 // export const mobile = '@media (max-width: 600px)';
 // export const tablet = '@media (min-width: 601px) and (max-width: 1023px)';
@@ -62,13 +62,15 @@ export function getCurrentScreen() {
 
 // for desktop
 export const getHeaderHeight = (
-  service = SERVICES.subscription,
+  service = "foodcheri",
   withBannerHeight = false,
   headerHeight
 ) => {
+  const isFoodcheriService = service === "foodcheri";
+  const isFridgeService = service === "fridge";
+
   let baseHeight =
-    headerHeight ||
-    (isFoodcheriService(service) ? 64 : isFridgeService(service) ? 68 : 67);
+    headerHeight || (isFoodcheriService ? 64 : isFridgeService ? 68 : 67);
   if (withBannerHeight) {
     baseHeight += 47;
   }
